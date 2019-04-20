@@ -1,0 +1,18 @@
+TARGETS = rsyslog lvm2-lvmpolld tomcat8 lvm2-lvmetad unattended-upgrades lxd open-vm-tools lxcfs uuidd killprocs apport postgresql mdadm ssh atd ntp single rsync acpid dbus cron sysstat sshguard plymouth grub-common rc.local ondemand
+INTERACTIVE =
+postgresql: rsyslog
+mdadm: rsyslog
+ssh: rsyslog
+atd: rsyslog
+ntp: rsyslog
+single: killprocs
+rsync: rsyslog
+acpid: rsyslog
+dbus: rsyslog
+cron: rsyslog
+sysstat: rsyslog
+sshguard: rsyslog ssh
+plymouth: postgresql rsyslog lvm2-lvmpolld mdadm sshguard ssh tomcat8 lvm2-lvmetad atd unattended-upgrades lxd open-vm-tools lxcfs uuidd ntp apport rsync acpid dbus cron sysstat
+grub-common: postgresql rsyslog lvm2-lvmpolld mdadm sshguard ssh tomcat8 lvm2-lvmetad atd unattended-upgrades lxd open-vm-tools lxcfs uuidd ntp apport rsync acpid dbus cron sysstat
+rc.local: postgresql rsyslog lvm2-lvmpolld mdadm sshguard ssh tomcat8 lvm2-lvmetad atd unattended-upgrades lxd open-vm-tools lxcfs uuidd ntp apport rsync acpid dbus cron sysstat
+ondemand: postgresql rsyslog lvm2-lvmpolld mdadm sshguard ssh tomcat8 lvm2-lvmetad atd unattended-upgrades lxd open-vm-tools lxcfs uuidd ntp apport rsync acpid dbus cron sysstat

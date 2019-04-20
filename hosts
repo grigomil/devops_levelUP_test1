@@ -1,0 +1,15 @@
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+169.254.169.254 metadata.google.internal metadata
+35.212.255.28 inst1
+35.237.232.164 inst2
+
+10.138.0.2 instance-1.us-west1-b.c.gifted-loader-237017.internal instance-1  # Added by Google
+169.254.169.254 metadata.google.internal  # Added by Google
